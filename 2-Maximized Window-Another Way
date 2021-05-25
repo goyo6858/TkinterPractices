@@ -1,0 +1,15 @@
+#最大化窗口-不带标题栏
+
+from tkinter import *
+
+root=Tk()
+root.title('Maximized Window Method2')
+root.attributes('-fullscreen',True) #注意attributes后面的s
+
+#最大化以后没有办法关掉窗口，所以需要一个退出按
+
+def close_desktop():
+  root.destroy()
+
+btn_exit=Button(text='Exit',command=close_desktop)
+btn_exit.pack()
