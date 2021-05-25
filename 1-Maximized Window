@@ -1,0 +1,7 @@
+#窗口最大化
+
+from tkinter import *
+
+root=Tk()
+root.state('zoomed')
+
