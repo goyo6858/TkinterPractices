@@ -1,0 +1,8 @@
+#透明窗口
+
+from tkinter import *
+
+root=Tk()
+root.title('Transparent window')
+root.state('zoomed') #最大化
+root.attributes('-alpha',-0.3) #alpha的值在0-1之间可以由高至低调节透明度
