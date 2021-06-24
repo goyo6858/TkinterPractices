@@ -1,0 +1,15 @@
+#创建带退出按钮的GUI
+
+from tkinter import *
+
+#事件处理
+
+def exit_window():
+  root.destroy()
+
+root=Tk()
+
+btn1=Button(root,text='EXIT',command=exit_window)
+btn1.pack()
+
+mainloop()
